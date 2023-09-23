@@ -9,7 +9,7 @@ async function createUserDB(name, surname, email, password) {
       email,
       password,
     });
-    
+
     const savedUser = await user.save();
     return savedUser;
  
@@ -55,7 +55,7 @@ async function deleteUserByIdDB(id) {
   }
 }
 
-async function getUserByEmailDB(email) {
+ async function getUserByEmailDB(email) {
   try {
     const user = await User.findOne({ email });
     return user;
@@ -63,7 +63,7 @@ async function getUserByEmailDB(email) {
     console.error('Error getting user by email:', error);
     throw error;
   }
-}
+} 
 
 module.exports = {
   createUserDB,
@@ -72,4 +72,5 @@ module.exports = {
   updateUserByIdDB,
   deleteUserByIdDB,
   getUserByEmailDB,
+ 
 };

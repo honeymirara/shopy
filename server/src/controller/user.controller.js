@@ -3,6 +3,7 @@ const { createUser, getAllUsers, getUserById, updateUserById, deleteUserById} = 
 
 const route = express.Router()
 
+
 route.post('/', async (req, res) => {
     try {
         const { name, surname, email, password } = req.body
