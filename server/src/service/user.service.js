@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt')
 const salt = 7;
 async function createUser(name, surname, email, password) {
     const foundUser = await getUserByEmailDB(email)
-    if (foundUser.length) throw new Error('this user already exists')
+    if (foundUser) throw new Error('this user already exists')
     const hashPassword = await bcrypt.hash(password, salt)
     const result = await createUserDB(name, surname, email, hashPassword);
 
@@ -22,9 +22,11 @@ async function getUserById(id) {
 }
 
 async function updateUserById(name, surname, email, password, id) {
-    const result = await updateUserByIdDB(name, surname, email, password, id)
+    const updatedData = { name, surname, email, password };
+    const result = await updateUserByIdDB(id, updatedData);
     return result;
 }
+
 
 async function deleteUserById(id) {
     const result = await deleteUserByIdDB(id)

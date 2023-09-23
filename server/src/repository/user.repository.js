@@ -2,19 +2,17 @@ const mongoose = require('../db');
 const User = require('../schemas/dbSchemas');
 
 async function createUserDB(name, surname, email, password) {
-  try {
+  
     const user = new User({
       name,
       surname,
       email,
       password,
     });
+    
     const savedUser = await user.save();
     return savedUser;
-  } catch (error) {
-    console.error('Error creating user:', error);
-    throw error;
-  }
+ 
 }
 
 async function getAllUsersDB() {
@@ -59,7 +57,7 @@ async function deleteUserByIdDB(id) {
 
 async function getUserByEmailDB(email) {
   try {
-    const user = await User.findOne({ email }); 
+    const user = await User.findOne({ email });
     return user;
   } catch (error) {
     console.error('Error getting user by email:', error);
