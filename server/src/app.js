@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const userRouter = require('./controller/user.controller')
 const api = require('../src/controller/api.controller');
+const product = require('../src/controller/products.controller')
 
 const app = express()
 
@@ -11,6 +12,7 @@ app.use(bodyParser.json())
 
 app.use('/user', userRouter)
 app.use('/api', api);
+app.use('/product', product)
 
 app.use((err, req, res, next) => res.send(err.message))
 

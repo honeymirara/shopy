@@ -1,5 +1,5 @@
 const mongoose = require('../db');
-const User = require('../schemas/dbSchemas')
+const User = require('../schemas/dbUserSchemas')
 
 async function registrationUserDB(name, surname, email, password) {
   
