@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  line-height: normal;
+  color: black;
+}
+
+body {
+  margin: auto;
+  background: #f6f5f4;
+}
+
