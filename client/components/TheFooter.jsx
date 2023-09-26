@@ -1,10 +1,14 @@
 import Link from 'next/link'
+import style from './TheFooter.module.css'
 
 const TheFooter = () => {
     return (
-        <footer className="container">
+        <div className={style.wrapper}>
+            <footer className={style.container}>
             created by Julia
         </footer>
+        </div>
+        
     )
 }
 

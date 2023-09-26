@@ -1,17 +1,39 @@
+/* url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Raleway:wght@100;500&display=swap'); */
+
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1220px;
+    width: 100%;
     margin: auto;
+    background-color: rgb(57, 56, 59);
+    height: 70px;
 }
 
 .link {
     display: flex;
     align-items: center;
     gap: 24px;
-    font-size: 50px;
-    font-weight: 500;
+   }
+
+.link {
+    float: right;
+    font: 300 20px Montserrat;
+    list-style: none;
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 200ms ease;
     
 }
-  
+
+.link :hover {
+    opacity: 0.5;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+
+
+
+

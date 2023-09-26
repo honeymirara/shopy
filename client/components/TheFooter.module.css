@@ -1,0 +1,15 @@
+
+
+.wrapper {
+    width: 100%;
+    margin: 50px auto;
+    background: whitesmoke;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}

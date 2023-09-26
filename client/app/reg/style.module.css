@@ -1,0 +1,39 @@
+.wrapper{
+    width:1220px;
+    background-color: whitesmoke;
+    margin: 6% auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font: 500 56px 'Dela Gothic One'
+}
+
+.wrapper div input {
+    font-size: 20px;
+    width: 650px;
+    height: 80px;
+    padding: 0px 12px;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    margin-top: 30px;
+
+}
+
+
+
+.wrapper .btn {
+    font: 700 20px 'Montserrat';
+    border-radius: 150px;
+    background: #414146;
+    width: 150px;
+    padding: 14px 22px;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}

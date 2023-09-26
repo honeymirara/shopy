@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .image {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1180px;
+    height: 70px;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+
+ 
+
+.productsContainer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 926px;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.imageProduct1 {
+    background: url() no-repeat;
+    width: 337px;
+    height: 216px;
+    padding: 40px 0px;
+    gap: 12px;
+}
+
+.list {
+    margin: auto;
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imageProduct2 {
+    background: url() no-repeat;
+    width: 337px;
+    height: 216px;
+    padding: 40px 0px;
+    gap: 12px;
+}
+
+.informationProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 510px;
+    text-align: center;
+    }
+
+.informationProduct h2 {
+    font: 700 30px Dela Gothic One;
+}
+
+.informationProduct p {
+    margin-top: 15px;
+    color: var(--primaty-grey-dark, #757575);
+    font: 500 18px Montserrat;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+    font-style: normal;
+    padding: 15px 40px 40px 40px;
+}
