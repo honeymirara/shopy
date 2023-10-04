@@ -8,15 +8,18 @@
     margin: auto;
     background-color: rgb(57, 56, 59);
     height: 70px;
+    color: whitesmoke;
 }
 
 .link {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 25px;
+    
    }
 
 .link {
+    color: whitesmoke;
     float: right;
     font: 300 20px Montserrat;
     list-style: none;
@@ -30,8 +33,11 @@
 .link :hover {
     opacity: 0.5;
     text-decoration: underline;
-    color: whitesmoke;
-}
+    color: white;
+} 
+
+
+
 
 
 

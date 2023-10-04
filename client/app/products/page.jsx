@@ -24,7 +24,7 @@ export default async function Products() {
   return (
     <>
       <h1>Products page</h1>
-      <ul>
+      <ul className={style.productsList}>
         {posts.map((post) => (
           <li key={post.id}>
             <Link href={`/blog/${post.id}`}>{post.title} </Link>

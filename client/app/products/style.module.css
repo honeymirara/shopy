@@ -6,6 +6,11 @@
 
 }
 
+.productsList{
+    font: 500 25px Monserrat;
+
+}
+
 /* .image {
     background-image: url();
     background-repeat: no-repeat;
@@ -18,7 +23,7 @@
  
 
 .productsContainer {
-    background-color: #fff;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     width: 926px;
